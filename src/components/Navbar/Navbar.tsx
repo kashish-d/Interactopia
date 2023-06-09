@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import SearchInput from "./SearchInput";
 import RightContent from "./RightContent/RightContent";
@@ -26,14 +26,16 @@ const Navbar: React.FC = () => {
 				onClick={() => onSelectMenuItem(defaultMenuItem)}
 			>
 				<Image src="/images/redditFace.svg" alt="" height="30px" />
-				<Image
-					src="/images/redditText.svg"
-					alt=""
-					height="46px"
+				<Text
 					display={{ base: "none", md: "unset" }}
-					//base is for mobile
-					//unset here means other than display: none
-				/>
+					fontSize="12pt"
+					fontFamily="cursive"
+					ml={2}
+					fontWeight={600}
+				>
+					Interactop
+					<span style={{ color: "#ff3c00" }}>i</span>a
+				</Text>
 			</Flex>
 			{user && <Directory />}
 			<SearchInput user={user} />

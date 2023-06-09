@@ -31,7 +31,7 @@ const PersonalHome: React.FC = () => {
 				</Flex>
 				<Stack spacing={3}>
 					<Text fontSize="9pt">
-						Your personal Reddit frontpage, built for you.
+						Your personal Interactopia frontpage, built for you.
 					</Text>
 					<Button height="30px">Create Post</Button>
 					<Button variant="outline" height="30px">
